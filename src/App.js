@@ -16,6 +16,12 @@ import Cart from './views/Devoluciones/Cart';
 import Payment from './views/Devoluciones/Payment';
 
 
+//importaciones de Paqueteria
+import HomePaqueteria from './views/Paqueteria/HomePaqueteria';
+import PedidosNoEnviados from './views/Paqueteria/PedidosNoEnviados';
+import PedidosEnviados from './views/Paqueteria/PedidosEnviados';
+import PedidosEntregados from './views/Paqueteria/PedidosEntregados';
+
 // All imports for Compras 
 import PurchaseUR from './views/Compras/PurchaseUR';
 import OrdersHome from './views/Compras/OrdersViews/OrdersHome';
