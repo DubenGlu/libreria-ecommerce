@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Form, Button, Image, Spinner } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import { colors } from "../../constants/constants";
 
 //Importaciones de componentes
