@@ -3,9 +3,7 @@ import { Form, Button, Image, Spinner } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 //Importaciones de componentes
-import MasterPage from "../../components/MasterPage";
-import NavTabMenu from "../../components/NavTabMenu";
-import CardBooks from "../../components/Card";
+import TabMenuPaqueteria from "../../components/Paqueteria/TabMenuPaqueteria";
 import BannerHome from "../../components/BannerHome";
 
 export default function Home() {
@@ -32,7 +30,7 @@ export default function Home() {
     return (
         <>
             <BannerHome />
-            <NavTabMenu />
+            <TabMenuPaqueteria />
             <div style={{ backgroundColor: "#ebebeb", height: "40vh" }}>
                 <div>
                     <h1>Buscar ID: </h1>
