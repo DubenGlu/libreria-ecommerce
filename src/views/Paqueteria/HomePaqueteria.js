@@ -7,34 +7,19 @@ import TabMenuPaqueteria from "../../components/Paqueteria/TabMenuPaqueteria";
 import BannerHome from "../../components/BannerHome";
 
 export default function Home() {
-    const navigate = useNavigate();
-
-    const [books, setBooks] = useState([]);
-
-    const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-        setLoading(true);
-        fetch('http://localhost:4000/test/libros')
-            .then(response => response.json())
-            .then((data) => {
-                setBooks(data);
-                setLoading(false);
-            })
-            .catch((e) => {
-                console.log(e);
-                setLoading(false);
-            })
-    }, []);
 
     return (
         <>
             <BannerHome />
             <TabMenuPaqueteria />
-            <div style={{ backgroundColor: "#ebebeb", height: "40vh" }}>
-                <div>
-                    <h1>Buscar ID: </h1>
-                </div>
+            <div style={{ backgroundColor: "#ebebeb", height: "15vh" , display: "flex"}}>
+                <form style={{ width: "20%" , height: "35%", margin: "1%", display: "flex"}}>
+                    <label for="texto" style={{width: "50%", margin: "2%"}}>Buscar:</label>
+                    <input type="text" name="texto" placeholder="   ID de pedido" style={{margin: "1%"}}></input>
+                <Button variant="light">Buscar</Button>
+                
+            </form>
+            <h1 style={{textAlign: "center", justifyContent: "center"}}>PEDIDOS</h1>
             </div>
         </>
     )
