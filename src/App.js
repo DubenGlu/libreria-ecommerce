@@ -21,6 +21,7 @@ import HomePaqueteria from './views/Paqueteria/HomePaqueteria';
 import PedidosNoEnviados from './views/Paqueteria/PedidosNoEnviados';
 import PedidosEnviados from './views/Paqueteria/PedidosEnviados';
 import PedidosEntregados from './views/Paqueteria/PedidosEntregados';
+import EnvioPedidos from './views/Paqueteria/EnvioPedidos';
 
 // All imports for Compras 
 import PurchaseUR from './views/Compras/PurchaseUR';
@@ -56,6 +57,13 @@ function App() {
           <Route path='/formBook' element={<FormBook />} />
           <Route path='/cart' element={<Cart/>}></Route>
           <Route path='/payment' element={<Payment/>}/>
+
+      //Rutas de Paqueteria
+          <Route path='/homepaq' element={<HomePaqueteria />} />
+          <Route path='/pedidosEnt' element={<PedidosEntregados />} />
+          <Route path='/pedidosEnv' element={<PedidosEnviados />} />
+          <Route path='/pedidosNEnv' element={<PedidosNoEnviados />} />
+          <Route path='/EnvPedidos' element={<EnvioPedidos />} />
 
       //Routes for Compras all
           <Route path='/purchaseem' element={<PurchaseUR />} />
